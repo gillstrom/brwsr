@@ -1,0 +1,38 @@
+{
+  "name": "brwsr",
+  "version": "1.0.0",
+  "description": "Get current browser",
+  "license": "MIT",
+  "repository": "gillstrom/brwsr",
+  "author": {
+    "name": "Andreas Gillström",
+    "email": "andreasgillstrom@gmail.com",
+    "url": "github.com/gillstrom"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "browser",
+    "check",
+    "chrome",
+    "detect",
+    "edge",
+    "explorer",
+    "firefox",
+    "internet",
+    "opera",
+    "safari"
+  ],
+  "dependencies": {
+    "is-chrome": "^1.0.1",
+    "is-edge": "^1.0.0",
+    "is-firefox": "^1.0.1",
+    "is-iexplorer": "^1.0.0",
+    "is-opera": "^1.0.1",
+    "is-safari": "^1.0.0"
+  }
+}
