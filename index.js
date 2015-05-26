@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports = function () {
-	var ret;
 	var browsers = {
 		'Google Chrome': require('is-chrome'),
 		'Internet Explorer': require('is-iexplorer'),
@@ -11,11 +10,9 @@ module.exports = function () {
 		Safari: require('is-safari')
 	};
 
-	Object.keys(browsers).forEach(function(key) {
-		if (browsers[key] === true) {
-			ret = key;
-		}
+	var ret = Object.keys(browsers).filter(function (key) {
+		return browsers[key];
 	});
 
-	return ret;
-}
+	return ret.length ? ret[0] : null;
+};
